@@ -1,3 +1,15 @@
+<!-- 
+// Refrences: 
+//Asked Chatgpt "How do you use hashing in a php file"
+// Its response: To use hashing in a PHP file (especially for passwords), you should use PHP’s built-in secure password functions:
+
+password_hash() → to create a hash
+
+password_verify() → to check a password against a hash
+
+These are much safer than older methods like md5() or sha1().
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
