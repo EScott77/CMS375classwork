@@ -58,6 +58,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 
+
+$sql1 = "select * from Users NATURAL JOIN UserDetails";
+$sql2 = "select Users.username, fullName, email, city from Users inner join UserDetails on Users.username = UserDetails.username";
+$sql3 = "select Users.username, fullName, email, city from Users left outer join UserDetails on Users.username = UserDetaials.username";
+$sql4 = "select Users.username, fullName, email, city from Users right outer join UserDetails on Users.username = UserDetails.username";
+
+
+$swl5 = "select Users.username, fullName, email, city from Users left  join on Users.username = UserDetails.username
+			union
+		select Users.username, fullName, email, city from Users right join on Users.username = UserDetails.username";
+		
+	
+
+
 $conn->close();
 ?>
 
